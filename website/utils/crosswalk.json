@@ -1,0 +1,401 @@
+{
+    "codemeta_completeness": {
+        "url": ""
+    },
+    "coupling_between_objects_ok": {
+        "envri": {
+            "mapping": "equivalent",
+            "url": "https://ieeexplore.ieee.org/document/11216562"
+        }
+    },
+    "internal_cohesion_ok": {
+        "envri": {
+            "mapping": "equivalent",
+            "url": "https://ieeexplore.ieee.org/document/11216562"
+        }
+    },
+    "lines_of_code_ok": {
+        "envri": {
+            "mapping": "equivalent",
+            "url": "https://ieeexplore.ieee.org/document/11216562"
+        }
+    },
+    "archived_in_scholarly_repository": {
+        "fair_impact": {
+            "mapping": "narrower",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-08"
+        },
+        "fairsoft": {
+            "mapping": "narrower",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/findability/F3_searchability/"
+        },
+        "elixir": {
+            "mapping": "equivalent",
+            "url": "https://zenodo.org/records/17035105#ListedInRegistries"
+        },
+        "cessda": {
+            "mapping": "broader",
+            "url": "https://docs.tech.cessda.eu/software/publication.html"
+        }
+    },
+    "archived_in_software_heritage": {
+        "fair_impact": {
+            "mapping": "narrower",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-08"
+        },
+        "fairsoft": {
+            "mapping": "narrower",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/findability/F3_searchability/"
+        },
+        "cessda": {
+            "mapping": "equivalent",
+            "url": "https://docs.tech.cessda.eu/software/code-archiving.html"
+        }
+    },
+    "dependency_management": {
+        "chaoss": {
+            "mapping": "broader",
+            "url": "https://chaoss.community/kb/metric-libyears/"
+        },
+        "openssf": {
+            "mapping": "equivalent",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dependency-update-tool"
+        }
+    },
+    "descriptive_metadata": {
+        "fair_impact": {
+            "mapping": "equivalent",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-04"
+        },
+        "fairsoft": {
+            "mapping": "equivalent",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/findability/F2_existence_of_metadata/"
+        },
+        "helmholtz": {
+            "mapping": "broader",
+            "url": "https://github.com/EVERSE-ResearchSoftware/schemas/issues/5#RichMetadata"
+        },
+        "elixir": {
+            "mapping": "broader",
+            "url": "https://zenodo.org/records/17035105#ProjectDescription"
+        },
+        "sbom": {
+            "mapping": "broader",
+            "url": "https://github.com/interlynk-io/sbomqs/blob/main/docs/reference/quality-checks.md#comp_with_name"
+        }
+    },
+    "functional_correctness": {
+        "elixir": {
+            "mapping": "equivalent",
+            "url": "https://zenodo.org/records/17035105#FunctionalCorrectness"
+        },
+        "joss": {
+            "mapping": "equivalent",
+            "url": "https://joss.readthedocs.io/en/latest/review_checklist.html#Functionality"
+        }
+    },
+    "has_ci-tests": {
+        "openssf": {
+            "mapping": "equivalent",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#ci-tests"
+        }
+    },
+    "has_no_linting_issues": {
+        "url": ""
+    },
+    "has_published_package": {
+        "openssf": {
+            "mapping": "equivalent",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#packaging"
+        },
+        "fairsoft": {
+            "mapping": "narrower",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/accessibility/A1_downloadable/"
+        }
+    },
+    "has_releases": {
+        "fair_impact": {
+            "mapping": "narrower",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-03"
+        },
+        "cessda": {
+            "mapping": "equivalent",
+            "url": "https://docs.tech.cessda.eu/software/releases.html"
+        },
+        "sbom": {
+            "mapping": "broader",
+            "url": "https://github.com/interlynk-io/sbomqs/blob/main/docs/reference/quality-checks.md#comp_with_version"
+        }
+    },
+    "human_code_review_requirement": {
+        "openssf": {
+            "mapping": "equivalent",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#code-review"
+        }
+    },
+    "listed_in_registry": {
+        "fairsoft": {
+            "mapping": "equivalent",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/findability/F3_searchability/"
+        },
+        "elixir": {
+            "mapping": "equivalent",
+            "url": "https://zenodo.org/records/17035105#ListedInRegistries"
+        },
+        "cessda": {
+            "mapping": "broader",
+            "url": "https://docs.tech.cessda.eu/software/code-archiving.html"
+        }
+    },
+    "metadata_is_up_to_date": {
+        "url": ""
+    },
+    "no_critical_vulnerability": {
+        "openssf": {
+            "mapping": "equivalent",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#vulnerabilities"
+        },
+        "sbom": {
+            "mapping": "equivalent",
+            "url": "https://github.com/interlynk-io/sbomqs/blob/main/docs/reference/quality-checks.md#sbom_with_vuln"
+        }
+    },
+    "no_leaked_credentials": {
+        "url": ""
+    },
+    "persistent_and_unique_identifier": {
+        "fair_impact": [
+            {
+                "mapping": "equivalent",
+                "url": "https://fair-impact.eu/metrics-software#FRSM-01"
+            },
+            {
+                "mapping": "broader",
+                "url": "https://fair-impact.eu/metrics-software#FRSM-07"
+            }
+        ],
+        "fairsoft": {
+            "mapping": "equivalent",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/findability/F1_identity_uniqueness/"
+        },
+        "helmholtz": {
+            "mapping": "narrower",
+            "url": "https://github.com/EVERSE-ResearchSoftware/schemas/issues/5#Identifier"
+        },
+        "sbom": {
+            "mapping": "equivalent",
+            "url": "https://github.com/interlynk-io/sbomqs/blob/main/docs/reference/quality-checks.md#comp_with_uniq_ids"
+        }
+
+    },
+    "repository_workflows": {
+        "openssf": {
+            "mapping": "broader",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#ci-tests"
+        }
+    },
+    "requirements_specified": {
+        "fair_impact": {
+            "mapping": "equivalent",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-13"
+        },
+        "fairsoft": {
+            "mapping": "equivalent",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/interoperability/I3_dependencies_available/"
+        },
+        "helmholtz": {
+            "mapping": "narrower",
+            "url": "https://github.com/EVERSE-ResearchSoftware/schemas/issues/5#ReusabilityConditions"
+        },
+        "sbom": {
+            "mapping": "equivalent",
+            "url": "https://github.com/interlynk-io/sbomqs/blob/main/docs/reference/quality-checks.md#sbom_dependencies"
+        }
+    },
+    "software_has_citation": {
+        "fair_impact": {
+            "mapping": "broader",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-12"
+        },
+        "cessda": {
+            "mapping": "equivalent",
+            "url": "https://docs.tech.cessda.eu/software/publication.html"
+        }
+    },
+    "software_has_documentation": {
+        "fair_impact": {
+            "mapping": "narrower",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-05"
+        },
+        "fairsoft": {
+            "mapping": "broader",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/reusability/R1_usage_documentation/"
+        },
+        "helmholtz": {
+            "mapping": "broader",
+            "url": "https://github.com/EVERSE-ResearchSoftware/schemas/issues/5#TechnicalAccessibility"
+        },
+        "elixir": [
+            {
+                "mapping": "equivalent",
+                "url": "https://zenodo.org/records/17035105#BasicDocumentation"
+            },
+            {
+                "mapping": "broader",
+                "url": "https://zenodo.org/records/17035105#ProjectDescription"
+            }
+        ],
+        "cessda": {
+            "mapping": "broader",
+            "url": "https://docs.tech.cessda.eu/software/requirements.html"
+        },
+        "joss": [
+            {
+                "mapping": "broader",
+                "url": "https://joss.readthedocs.io/en/latest/review_checklist.html#Installation"
+            },
+            {
+                "mapping": "broader",
+                "url": "https://joss.readthedocs.io/en/latest/review_checklist.html#InstallationInstructions"
+            }
+        ]
+    },
+    "software_has_license": {
+        "chaoss": {
+            "mapping": "equivalent",
+            "url": "https://chaoss.community/kb/metric-licenses-declared/"
+        },
+        "fair_impact": [
+            {
+                "mapping": "equivalent",
+                "url": "https://fair-impact.eu/metrics-software#FRSM-15"
+            },
+            {
+                "mapping": "narrower",
+                "url": "https://fair-impact.eu/metrics-software#FRSM-16"
+            }
+        ],
+        "openssf": {
+            "mapping": "equivalent",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#license"
+        },
+        "fairsoft": {
+            "mapping": "equivalent",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/reusability/R2_license/"
+        },
+        "elixir": {
+            "mapping": "broader",
+            "url": "https://zenodo.org/records/17035105#LicensingAndReusability"
+        },
+        "cessda": {
+            "mapping": "equivalent",
+            "url": "https://docs.tech.cessda.eu/software/requirements.html"
+        },
+        "sbom": {
+            "mapping": "broader",
+            "url": "https://github.com/interlynk-io/sbomqs/blob/main/docs/reference/quality-checks.md#comp_with_licenses"
+        },
+        "joss": {
+            "mapping": "equivalent",
+            "url": "https://joss.readthedocs.io/en/latest/review_checklist.html#License"
+        }
+    },
+    "software_has_tests": {
+        "fair_impact": {
+            "mapping": "equivalent",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-14"
+        },
+        "elixir": {
+            "mapping": "narrower",
+            "url": "https://zenodo.org/records/17035105#TestCoverageOfCodeAndFunction"
+        },
+        "joss": {
+            "mapping": "equivalent",
+            "url": "https://joss.readthedocs.io/en/latest/review_checklist.html#AutomatedTests"
+        }
+    },
+    "software_test_coverage": {
+        "chaoss": {
+            "mapping": "equivalent",
+            "url": "https://chaoss.community/kb/metric-test-coverage/"
+        },
+        "elixir": {
+            "mapping": "narrower",
+            "url": "https://zenodo.org/records/17035105#TestCoverageOfCodeAndFunction"
+        }
+    },
+    "static_analysis_common_vulnerabilities": {
+        "openssf": {
+            "mapping": "equivalent",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#sast"
+        },
+        "elixir": {
+            "mapping": "narrower",
+            "url": "https://zenodo.org/records/17035105#SafeIntegration"
+        }
+    },
+    "support_issue_tracking": {
+        "cessda": {
+            "mapping": "equivalent",
+            "url": "https://docs.tech.cessda.eu/software/issue-tracking.html"
+        },
+        "elixir": {
+            "mapping": "equivalent",
+            "url": "https://zenodo.org/records/17035105#IssueTracking"
+        }
+    },
+    "uses_fuzzing": {
+        "openssf": {
+            "mapping": "equivalent",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#fuzzing"
+        }
+    },
+    "uses_tool_for_warnings_and_mistakes": {
+        "openssf": {
+            "mapping": "equivalent",
+            "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#sast"
+        }
+    },
+    "version_control_use": {
+        "fair_impact": {
+            "mapping": "narrower",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-17"
+        },
+        "fairsoft": {
+            "mapping": "narrower",
+            "url": "https://inab.github.io/FAIRsoft_indicators/indicators/reusability/R4_provenance/"
+        },
+        "joss": {
+            "mapping": "equivalent",
+            "url": "https://joss.readthedocs.io/en/latest/review_checklist.html#Repository"
+        }
+    },
+    "versioning_standards_use": {
+        "fair_impact": {
+            "mapping": "narrower",
+            "url": "https://fair-impact.eu/metrics-software#FRSM-03"
+        },
+        "helmholtz": {
+            "mapping": "narrower",
+            "url": "https://github.com/EVERSE-ResearchSoftware/schemas/issues/5#Versioning"
+        },
+        "elixir": {
+            "mapping": "narrower",
+            "url": "https://zenodo.org/records/17035105#Versioning"
+        },
+        "cessda": {
+            "mapping": "equivalent",
+            "url": "https://docs.tech.cessda.eu/software/releases.html"
+        }
+    },
+    "has_contribution_guidelines": {
+        "cessda": {
+            "mapping": "equivalent",
+            "url": "https://docs.tech.cessda.eu/software/requirements.html"
+        },
+        "joss": {
+            "mapping": "equivalent",
+            "url": "https://joss.readthedocs.io/en/latest/review_checklist.html#CommunityGuidelines"
+        }
+    }
+}

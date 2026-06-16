@@ -1,0 +1,161 @@
+table {
+    width: max-content; /* Cambiado de 100% para que se expanda según sus columnas fijas */
+    min-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 0; /* Ajustado a 0 porque el margen superior ahora lo lleva el contenedor */
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 18px;
+    text-align: left;
+    vertical-align: middle; /* Cambiado a middle para mejorar la estética visual de las celdas alineadas */
+    font-size: 14px;
+    white-space: nowrap; /* Cambiado de 'word-break: break-word' para evitar que el texto colapse verticalmente */
+}
+
+th {
+    background-color: #1E90FF;
+    color: white;
+    font-size: 17px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#search-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#search-input {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #005bb5;
+}
+
+#search-input:focus {
+    border-color: #1E90FF;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.6);
+    outline: none;
+}
+
+#clear-search {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#clear-search:hover {
+    background-color: #bbb;
+}
+
+#fh5co-about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#fh5co-about .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.fh5co-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#table-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #1E90FF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#mapping-legend {
+    max-width: 1140px;
+    margin: 0 auto 20px auto;
+    border: 1px solid #1E90FF;
+    padding: 12px 16px 14px 16px;
+    font-size: 13px;
+}
+
+#mapping-legend .legend-title {
+    background-color: #1E90FF;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-bottom: 1px solid #1E90FF;
+    margin-bottom: 10px;
+}
+
+#mapping-legend ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+#mapping-legend li {
+    margin-bottom: 6px;
+}
+
+/* ==========================================
+   Contenedor añadido para el Scroll Lateral
+   ========================================== */
+.table-responsive-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Diseño personalizado para la barra de scroll (Chrome, Safari, Edge) */
+.table-responsive-container::-webkit-scrollbar {
+    height: 10px;
+}
+.table-responsive-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.table-responsive-container::-webkit-scrollbar-thumb {
+    background: #1E90FF;
+    border-radius: 5px;
+}
+.table-responsive-container::-webkit-scrollbar-thumb:hover {
+    background: #005bb5;
+}

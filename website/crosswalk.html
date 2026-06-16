@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="scientific software, knowledge graph, reproducibility, reusability" />
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/crosswalk.css">
+    <link rel="icon" type="image/png" href="/website/images/everse_icon.png">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="fh5co-loader"></div>
+
+    <div id="page">
+        <nav class="fh5co-nav" role="navigation">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row" style="display: flex; align-items: center; justify-content: space-between;">
+                        <div class="col-xs-6">
+                            <a href="https://everse.software/">
+                                <img src="images/everse_logo.png" alt="Logo" style="height: 40px;">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 text-right menu-1">
+                            <ul style="display: flex; justify-content: flex-end; gap: 20px; margin: 0;">
+                                <li><a href="indicators.html">Indicators</a></li>
+                                <li><a href="dimensions.html">Dimensions</a></li>
+                                <li><a href="rs_tiers.html">RS Tiers</a></li>
+                                <li class="active"><a href="crosswalk.html">Crosswalk</a></li>
+                                <li><a href="community.html">Community</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="fh5co-about">
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <h2>Indicators Crosswalk</h2>
+                </div>
+                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                    <p style="color: #333333;">
+                        Here you can find a table that shows the relations between EVERSE indicators and those from other sources
+                    </p>
+                </div>
+            </div>
+
+            <div id="search-wrapper">
+                <input type="text" id="search-input" class="form-control" placeholder="Search in table...">
+                <button id="clear-search" title="Clear search">✕</button>
+            </div>
+
+            <div id="table-loading-overlay">
+                <div class="spinner"></div>
+                <p>Loading indicators...</p>
+            </div>
+
+            <!-- Contenedor responsive para activar el scroll horizontal -->
+            <div class="table-responsive-container">
+                <table id="json-table">
+                    <colgroup>
+                        <!-- Tamaños fijos en píxeles para asegurar el ancho de las columnas -->
+                        <col style="width: 260px;"> <!-- Name -->
+                        <col style="width: 130px;"> <!-- Elixir -->
+                        <col style="width: 130px;"> <!-- CHAOSS -->
+                        <col style="width: 130px;"> <!-- Helmholtz -->
+                        <col style="width: 130px;"> <!-- FAIR Impact -->
+                        <col style="width: 130px;"> <!-- FAIRSOFT -->
+                        <col style="width: 130px;"> <!-- OpenSSF -->
+                        <col style="width: 130px;"> <!-- CESSDA -->
+                        <col style="width: 130px;"> <!-- ENVRI -->
+                        <col style="width: 130px;"> <!-- SBOM -->
+                        <col style="width: 130px;"> <!-- JOSS -->
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Elixir</th>
+                            <th>CHAOSS</th>
+                            <th>Helmholtz</th>
+                            <th>FAIR Impact</th>
+                            <th>FAIRSOFT</th>
+                            <th>OpenSSF</th>
+                            <th>CESSDA</th>
+                            <th>ENVRI</th>
+                            <th>SBOM</th>
+                            <th>JOSS</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="mapping-legend">
+        <div class="legend-section">
+            <div class="legend-title">Relations</div>
+            <ul>
+                <li><span class="legend-term equivalent">Equivalent</span>: Same meaning or scope as the EVERSE indicator.</li>
+                <li><span class="legend-term broader">Broader</span>: Covers a wider concept than the EVERSE indicator.</li>
+                <li><span class="legend-term narrower">Narrower</span>: Covers a more specific aspect of the EVERSE indicator.</li>
+            </ul>
+        </div>
+
+        <div class="legend-section">
+            <div class="legend-title">Sources</div>
+            <ul>
+                <li><span class="legend-term">FAIRSOFT</span>: Set of indicators in the biomedical sciences. URL: <a href="https://inab.github.io/FAIRsoft_indicators/indicators/" target="_blank">https://inab.github.io/FAIRsoft_indicators/indicators/</a></li>
+                <li><span class="legend-term">FAIR-Impact</span>: Set of metrics for FAIR principles compliance. URL: <a href="https://fair-impact.eu/metrics-software" target="_blank">https://fair-impact.eu/metrics-software</a></li>
+                <li><span class="legend-term">OpenSSF</span>: Set of checks to ensure open source projects quality. URL: <a href="https://scorecard.dev/#the-checks" target="_blank">https://scorecard.dev/#the-checks</a></li>
+                <li><span class="legend-term">CHAOSS</span>: Set of metrics to promote open source community health on a global scale. URL: <a href="https://chaoss.community/kbtopic/software/" target="_blank">https://chaoss.community/kbtopic/software/</a></li>
+                <li><span class="legend-term">Helmholtz</span>: Set of quality indicators for data and software products. URL: <a href="https://os.helmholtz.de/en/open-science-in-helmholtz/working-group-open-science/task-group-quality-indicators/" target="_blank">https://os.helmholtz.de/en/open-science-in-helmholtz/working-group-open-science/task-group-quality-indicators/</a></li>
+                <li><span class="legend-term">Elixir</span>: Set of quality indicators to improve the quality and sustainability of research software. URL: <a href="https://zenodo.org/records/17035105" target="_blank">https://zenodo.org/records/17035105</a></li>
+                <li><span class="legend-term">CESSDA</span>: Set of quality guidelines for social science research software. URL: <a href="https://docs.tech.cessda.eu/index.htmle" target="_blank">https://docs.tech.cessda.eu/index.html</a></li>
+                <li><span class="legend-term">ENVRI</span>: Set of quality indicators for Jupyter Notebooks. URL: <a href="https://ieeexplore.ieee.org/document/11216562" target="_blank">https://ieeexplore.ieee.org/document/11216562</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let allData = [];
+        let crosswalkByIndicatorId = {};
+
+        async function fetchJSONFiles(directory) {
+            const overlay = document.getElementById("table-loading-overlay");
+            overlay.style.display = "flex";
+
+            try {
+                const [indicatorRes, crosswalkRes] = await Promise.all([
+                    fetch(`${directory}/../api/indicators.json`),
+                    fetch(`${directory}/../website/utils/crosswalk.json`)
+                ]);
+
+                const indicatorData = await indicatorRes.json();
+                crosswalkByIndicatorId = await crosswalkRes.json();
+
+                allData = indicatorData.indicators || [];
+                updateTable(allData);
+                handleHashNavigation();
+            } catch (error) {
+                console.error("Error loading data:", error);
+            } finally {
+                overlay.style.display = "none";
+            }
+        }
+
+        function buildCrosswalkCell(cell, entry) {
+            cell.style.textAlign = "center";
+            cell.style.verticalAlign = "middle";
+
+            if (!entry) {
+                cell.textContent = "-";
+                cell.style.color = "#999";
+                return;
+            }
+
+            const values = Array.isArray(entry) ? entry : [entry];
+            let hasContent = false;
+
+            values.forEach((item, index) => {
+                if (item && item.mapping && item.url) {
+                    hasContent = true;
+
+                    const link = document.createElement("a");
+                    link.href = item.url;
+                    link.textContent = item.mapping;
+                    link.target = "_blank";
+
+                    link.style.display = "block";
+                    link.style.fontSize = "15px";
+                    link.style.fontWeight = "normal";
+                    link.style.color = "#1E90FF";
+                    link.style.margin = "4px 0";
+                    link.style.textDecoration = "none";
+
+                    cell.appendChild(link);
+
+                    if (index < values.length - 1) {
+                        const hr = document.createElement("hr");
+                        hr.style.borderTop = "1px dashed #777";
+                        hr.style.margin = "4px 0";
+                        cell.appendChild(hr);
+                    }
+                }
+            });
+
+            if (!hasContent) {
+                cell.textContent = "-";
+                cell.style.color = "#999";
+            }
+        }
+
+        function updateTable(dataList) {
+            const tableBody = document.querySelector("#json-table tbody");
+            tableBody.innerHTML = "";
+
+            dataList.forEach(data => {
+                const row = document.createElement("tr");
+
+                let rowId = "no_id";
+                if (data.identifier && data.identifier['@id']) {
+                    const parts = data.identifier['@id'].split('/');
+                    rowId = parts[parts.length - 1];
+                }
+                row.id = rowId;
+
+                const mapping = crosswalkByIndicatorId[rowId] || {};
+
+                const nameCell = document.createElement("td");
+                if (data.name && rowId !== "no_id") {
+
+                    const link = document.createElement("a");
+                    link.href = data.identifier['@id'];
+                    link.textContent = data.name;
+                    link.style.color = "#1E90FF";
+                    link.style.marginRight = "8px";
+                    nameCell.appendChild(link);
+
+                    if (data._filename) {
+                        const iconLink = document.createElement("a");
+                        iconLink.href = `https://github.com/EVERSE-ResearchSoftware/indicators/blob/main/indicators/${data._filename}`;
+                        iconLink.target = "_blank";
+
+                        const iconImg = document.createElement("img");
+                        iconImg.src = "images/json-ld-logo.png";
+                        iconImg.style.width = "16px";
+                        iconImg.style.height = "16px";
+                        iconImg.style.verticalAlign = "middle";
+
+                        iconLink.appendChild(iconImg);
+                        nameCell.appendChild(iconLink);
+                    }
+                }
+                row.appendChild(nameCell);
+
+                ["elixir","chaoss","helmholtz","fair_impact","fairsoft","openssf","cessda", "envri", "sbom", "joss"]
+                    .forEach(key => {
+                        const cell = document.createElement("td");
+                        buildCrosswalkCell(cell, mapping[key]);
+                        row.appendChild(cell);
+                    });
+
+                tableBody.appendChild(row);
+            });
+        }
+
+        function handleHashNavigation() {
+            const hash = window.location.hash;
+            if (!hash) return;
+
+            updateTable(allData);
+
+            setTimeout(() => {
+                const row = document.getElementById(hash.substring(1));
+                if (row) {
+                    row.scrollIntoView({ behavior: "smooth", block: "center" });
+                    row.style.backgroundColor = "#ffff99";
+                    setTimeout(() => row.style.backgroundColor = "", 2000);
+                }
+            }, 100);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const input = document.getElementById("search-input");
+            const clearButton = document.getElementById("clear-search");
+
+            input.addEventListener("keydown", e => {
+                if (e.key === "Enter") {
+                    const q = input.value.toLowerCase().trim();
+                    updateTable(allData.filter(i =>
+                        (i.name && i.name.toLowerCase().includes(q)) ||
+                        (i.identifier && i.identifier['@id'] && i.identifier['@id'].toLowerCase().includes(q))
+                    ));
+                }
+            });
+
+            clearButton.addEventListener("click", () => {
+                input.value = "";
+                updateTable(allData);
+            });
+
+            window.addEventListener("hashchange", handleHashNavigation);
+            fetchJSONFiles(".");
+        });
+    </script>
+
+    <div class="row copyright">
+        <div class="col-md-12 text-center">
+            <p>
+                <small class="block">
+                    This project has received funding from the European Union's Horizon Europe Programme 
+                    under GA 101129744 — EVERSE — HORIZON-INFRA-2023-EOSC-01-02
+                </small>
+            </p>
+            <p>
+                <small class="block">
+                    This page was built on a free template designed by 
+                    <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> (&copy; 2016 Free HTML5)
+                </small>
+            </p>
+        </div>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
